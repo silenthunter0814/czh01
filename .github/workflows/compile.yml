@@ -1,22 +1,13 @@
-name: compile
+name: CI
 
-on: 
-  push:
-    branches: [ main ]
+on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-  steps:  
 
-    - name: Setup C/C++ Compiler
-      # You may pin to the exact commit or the version.
-      # uses: rlalik/setup-cpp-compiler@f39db50a7fd04bfd65ce41e8fec0ac185ae59dfb
-      uses: rlalik/setup-cpp-compiler@v1.2
-      with:
-        # Compiler to install
-        compiler: # optional, default is gcc-latest
-          
-    - name: Build
-      run: gcc hello.c -o a.out
-      run: a.out    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo "Hello, world!" 
