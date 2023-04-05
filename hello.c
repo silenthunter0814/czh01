@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* This is the first program. */
+
 int main()
 {
 	printf("hello world\n");
