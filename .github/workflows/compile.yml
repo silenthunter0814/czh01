@@ -13,4 +13,3 @@ jobs:
         run: |
           echo "Hello, world!" 
           gcc hello.c
-          a.out
