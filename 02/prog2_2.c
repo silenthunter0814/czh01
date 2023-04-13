@@ -10,7 +10,7 @@ int main()
 
         i = 3;
         x = 5;
-        i *= x +6;
+        i *= x + 6;
         printf("i = %d\n", i);
         return 0;
 }
