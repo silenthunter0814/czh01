@@ -3,8 +3,6 @@
  * calculate rectangle's area
  */
  
-#include <stdio.h>
-
 int main()
 {
         int a, b, s;       /* width, length, area */
@@ -12,6 +10,7 @@ int main()
         printf("input width and length: ");
         scanf("%d %d", &a, &b);
         s = a * b;
-        printf("The rectangle read is: %d\n", s);
+        printf("The rectangle's area is: %d\n\n", s);
+        printf("Address of var a: %p\n", &a);
         return 0;
 }
